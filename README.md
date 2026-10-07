@@ -15,9 +15,13 @@ This is the source code for the Recipe Share website, built for our midterm proj
 
 # Zhabikhan Ali's work
 - Wrote the whole code of the Home and About pages
+
 <img width="814" height="823" alt="Screenshot 2026-10-07 at 20 51 08" src="https://github.com/user-attachments/assets/a39046b2-b876-4d55-9a84-0ac0e8c474ed" />
+
 - Set the default blueprint of the navbar and footer for all pages
-- <img width="723" height="791" alt="Screenshot 2026-10-07 at 20 52 33" src="https://github.com/user-attachments/assets/1f587478-62d6-4087-b33a-265a366b1169" />
+
+<img width="723" height="791" alt="Screenshot 2026-10-07 at 20 52 33" src="https://github.com/user-attachments/assets/1f587478-62d6-4087-b33a-265a366b1169" />
+
 - Imported font-family in CSS
 - Set some specific design baselines
 
