@@ -31,7 +31,7 @@ This is the source code for the Recipe Share website, built for our midterm proj
 - Did the media queries for all pages
 <img width="797" height="679" alt="Screenshot 2026-10-07 at 20 55 40" src="https://github.com/user-attachments/assets/caea0b88-ac44-4892-a1a5-85068e1ac4fb" />
 
-# Diyar kabyken's work
+# Diyar Kabyken's work
 - Did the main section of Galery page and designed specific parts that match the page
 - Designed media queries for the grid system 
 - Added more interaction with pictures by linking them with different parts  of websites
