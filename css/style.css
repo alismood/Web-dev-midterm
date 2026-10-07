@@ -1,4 +1,4 @@
-/* Main stylesheet for Recipe Website */
+/* Base styles and Bootstrap overrides */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 :root {
@@ -22,69 +22,43 @@ main {
 }
 
 .custom-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: #ffffff;
   border-bottom: 2px solid var(--primary-color);
+  background-color: #ffffff;
 }
 
-.custom-header nav a {
-  margin-left: 15px;
-  text-decoration: none;
-  color: var(--text-dark);
+.nav-link:hover, .nav-link:focus {
+  color: var(--primary-color) !important;
 }
 
-.custom-header nav a:hover {
-  color: var(--primary-color);
-}
-
-.recipe-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-.relative-box {
-  position: relative;
-  padding: 20px;
-  background: #fff;
-  border: 1px solid #ddd;
-}
-
-.absolute-badge {
-  position: absolute;
-  top: -10px;
-  right: -10px;
-  background: var(--primary-color);
+.bg-home {
+  background-image: url('https://images.unsplash.com/photo-1495195134817-aeb325a55b65?auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center;
   color: white;
-  padding: 5px 10px;
-  border-radius: 50%;
+  padding: 100px 0;
 }
 
-.table-custom tr:nth-child(even) {
-  background-color: #e9ecef;
+.bg-home h1, .bg-home p {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: inline-block;
+  padding: 10px 20px;
 }
 
-input:focus, textarea:focus {
-  border-color: var(--primary-color);
-  outline: none;
-  box-shadow: 0 0 5px rgba(217, 83, 79, 0.5);
+.bg-about {
+  background-image: url('https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
+  color: white;
 }
 
-@media (max-width: 768px) {
-  .recipe-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.bg-about .container {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 8px;
 }
 
-@media (max-width: 480px) {
-  .custom-header {
-    flex-direction: column;
-    text-align: center;
-  }
-  .recipe-grid {
-    grid-template-columns: 1fr;
-  }
+.chef-img { 
+  height: 200px; 
+  object-fit: cover; 
 }

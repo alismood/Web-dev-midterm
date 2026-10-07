@@ -1,43 +1,80 @@
-<!-- About Page -->
+<!-- Starter About Page -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Recipe Share - About</title>
+  <link rel="icon" href="images/icon.ico" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="custom-header">
-    <div class="logo fw-bold fs-4">Recipe Share</div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="recipes.html">Recipes</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-  
-  <main class="container mt-5">
-    <h2>About Us</h2>
-    <div class="row mt-4">
-      <div class="col-md-8">
-        <p>We are a community of food lovers sharing our best recipes.</p>
+  <nav class="navbar navbar-expand-lg navbar-light custom-header sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html">
+        <img src="images/icon.ico" alt="Logo" width="30" height="30" class="me-2">
+        Recipe Share
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="recipes.html">Recipes</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        </ul>
       </div>
-      <div class="col-md-4">
-        <div class="relative-box">
-          <span class="absolute-badge">Top</span>
-          <h4>#1 Food Community</h4>
-          <p>Join thousands of active cooks.</p>
+    </div>
+  </nav>
+  
+  <main class="bg-about">
+    <div class="container">
+      <h2>About Us</h2>
+      <div class="row mt-4 mb-5">
+        <div class="col-md-12">
+          <p>We are a community of food lovers dedicated to sharing the finest home-cooked meals. Our goal is to bring restaurant-quality recipes directly to your kitchen.</p>
+        </div>
+      </div>
+      
+      <h3 class="text-center mb-4">Meet Our Chefs</h3>
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=400&q=80" class="card-img-top chef-img" alt="Zhabaikhan Ali">
+            <div class="card-body">
+              <h5 class="card-title text-dark">Zhabaikhan Ali</h5>
+              <p class="card-text text-muted">Project Manager and Executive Chef specializing in traditional and fusion cuisine.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=400&q=80" class="card-img-top chef-img" alt="Diyar Kabyken">
+            <div class="card-body">
+              <h5 class="card-title text-dark">Diyar Kabyken</h5>
+              <p class="card-text text-muted">Head of Visual Presentation and Pastry Chef.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=400&q=80" class="card-img-top chef-img" alt="Abdul Mobin">
+            <div class="card-body">
+              <h5 class="card-title text-dark">Abdul Mobin</h5>
+              <p class="card-text text-muted">Culinary Innovator focused on quick meal prep recipes.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </main>
 
-  <footer class="bg-dark text-white text-center py-3 mt-5">
+  <footer class="bg-dark text-white text-center py-3">
     <p>&copy; 2026 Recipe Share. Follow us on social media.</p>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
