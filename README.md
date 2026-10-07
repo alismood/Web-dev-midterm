@@ -13,16 +13,27 @@ This is the source code for the Recipe Share website, built for our midterm proj
 
 ## 3. Implementation Steps
 
-1. **Setup Project Files:** Created the folders and HTML files, and linked Bootstrap. 
-   * *[Insert Screenshot: VS Code file structure]*
-2. **Build Navigation and Footer:** Created a responsive navigation bar and a standard footer, then pasted them into all 5 pages.
-   * *[Insert Screenshot: Website navigation bar]*
-3. **Design About Page:** Used the Bootstrap grid to create profile cards for the three chefs.
-   * *[Insert Screenshot: The three chef cards]*
-4. **Design Recipe Page:** Used Flexbox to make a vertical list of recipe cards with images and cooking steps.
-   * *[Insert Screenshot: Recipe list]*
-5. **Design Gallery Page:** Used CSS Grid to create a 3x3 picture grid with a zoom effect when hovering over the images.
-   * *[Insert Screenshot: Gallery grid]*
+# Zhabikhan Ali's work
+- Wrote the whole code of the Home and About pages
+<img width="814" height="823" alt="Screenshot 2026-10-07 at 20 51 08" src="https://github.com/user-attachments/assets/a39046b2-b876-4d55-9a84-0ac0e8c474ed" />
+- Set the default blueprint of the navbar and footer for all pages
+- <img width="723" height="791" alt="Screenshot 2026-10-07 at 20 52 33" src="https://github.com/user-attachments/assets/1f587478-62d6-4087-b33a-265a366b1169" />
+- Imported font-family in CSS
+- Set some specific design baselines
+
+# Abdul Mobin's work
+- Designed some specific parts for the CSS for the Recipes page and built the Recipes page in HTML
+- Used Flex as the main section of the Recipe page
+- Did the media queries for all pages
+<img width="797" height="679" alt="Screenshot 2026-10-07 at 20 55 40" src="https://github.com/user-attachments/assets/caea0b88-ac44-4892-a1a5-85068e1ac4fb" />
+
+# Diyar kabyken's work
+- Did the main section of Galery page and designed specific parts that match the page
+- Designed media queries for the grid system 
+- Added more interaction with pictures by linking them with different parts  of websites
+- <img width="650" height="440" alt="Screenshot 2026-10-07 at 20 59 59" src="https://github.com/user-attachments/assets/cf4ca5dc-f7a3-4a6b-9eca-a305d89b814a" />
+ 
+
 
 ## 4. Summary
 We successfully built a 5-page static website. We used Bootstrap and custom CSS to make sure the website looks good on all screen sizes. The project meets all the midterm requirements without using JavaScript.
