@@ -62,3 +62,33 @@ main {
   height: 200px; 
   object-fit: cover; 
 }
+
+/* Abdul Mobin's Work */
+
+.recipe-flex-container { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 20px; 
+}
+
+.recipe-horizontal-card { 
+  display: flex; 
+  flex-direction: column; 
+  background: #fff; 
+  border: 1px solid #ddd; 
+  overflow: hidden; 
+}
+
+@media (min-width: 768px) { 
+  .recipe-horizontal-card { flex-direction: row; } 
+}
+
+.recipe-horizontal-img { 
+  width: 100%; 
+  height: 200px; 
+  object-fit: cover; 
+}
+
+@media (min-width: 768px) { 
+  .recipe-horizontal-img { width: 300px; height: auto; } 
+}
