@@ -1,43 +1,105 @@
 # Recipe Share
 
-## 1. Introduction
-This is the source code for the Recipe Share website, built for our midterm project. It is a responsive website where users can view dishes, read recipes, and learn about our chefs. We built it using HTML5, CSS3, Flexbox, CSS Grid, and Bootstrap 5 to ensure it works on phones, tablets, and computers.
+## Description
 
-## 2. Team Members and Roles
+Recipe Share is a website for finding simple dishes and reading cooking steps. It has five pages and works on phones, tablets, and computers.
 
-| Name | Project Role and Contributions |
-| :--- | :--- |
-| Zhabaikhan Ali | Project Manager. Designed the Home and About pages. Set up the navigation bar and footer for all pages. Divided the project into multiple web pages and helped with the main CSS file. |
-| Diyar Kabyken | Added the pictures and background images. Designed the 3x3 CSS Grid layout for the Gallery page and helped with the main CSS file. |
-| Abdul Mobin | Designed the Flexbox layout for the Recipe page and structured the Gallery page. Helped with the main CSS file. |
+## Team
 
-## 3. Implementation Steps
+Our group is IT-2503. The members are Zhabaikhan Ali, Abdul Mobin, and Diyar Kabyken.
 
-# Zhabikhan Ali's work
-- Wrote the whole code of the Home and About pages
+## Home
 
-<img width="814" height="823" alt="Screenshot 2026-10-07 at 20 51 08" src="https://github.com/user-attachments/assets/a39046b2-b876-4d55-9a84-0ac0e8c474ed" />
+The home page introduces the website. It has links to the recipes, gallery, and contact page.
 
-- Set the default blueprint of the navbar and footer for all pages
+[Paste a screenshot of the home page here.]
 
-<img width="723" height="791" alt="Screenshot 2026-10-07 at 20 52 33" src="https://github.com/user-attachments/assets/1f587478-62d6-4087-b33a-265a366b1169" />
+## About
 
-- Imported font-family in CSS
-- Set some specific design baselines
+The about page explains the website. It also shows the three team members.
 
-# Abdul Mobin's work
-- Designed some specific parts for the CSS for the Recipes page and built the Recipes page in HTML
-- Used Flex as the main section of the Recipe page
-- Did the media queries for all pages
-<img width="797" height="679" alt="Screenshot 2026-10-07 at 20 55 40" src="https://github.com/user-attachments/assets/caea0b88-ac44-4892-a1a5-85068e1ac4fb" />
+[Paste a screenshot of the about page here.]
 
-# Diyar Kabyken's work
-- Did the main section of Galery page and designed specific parts that match the page
-- Designed media queries for the grid system 
-- Added more interaction with pictures by linking them with different parts  of websites
-- <img width="650" height="440" alt="Screenshot 2026-10-07 at 20 59 59" src="https://github.com/user-attachments/assets/cf4ca5dc-f7a3-4a6b-9eca-a305d89b814a" />
- 
+## Recipes
 
+Users can search recipes by name or ingredient and filter them by category. The results change as they type, and the search works with uppercase and lowercase letters.
 
-## 4. Summary
-We successfully built a 5-page static website. We used Bootstrap and custom CSS to make sure the website looks good on all screen sizes. The project meets all the midterm requirements without using JavaScript.
+[Paste a screenshot of the search and category filters here.]
+
+## Recipe List
+
+Users can add, view, edit, and delete recipes in a table. A confirmation appears before deleting, and the list resets when the page reloads.
+
+[Paste a screenshot of the recipe table and edit form here.]
+
+## Gallery
+
+The gallery uses CSS Grid to display food photos. Clicking a photo opens a larger view with previous and next buttons and fade effects.
+
+[Paste a screenshot of the gallery grid here.]
+
+[Paste a screenshot of the larger photo view here.]
+
+## Contact and Registration
+
+The forms check required fields, email format, password length, and matching passwords. The password strength label changes between weak, medium, and strong as the user types. These practice forms show feedback without creating accounts or sending messages.
+
+[Paste a screenshot of the form errors here.]
+
+[Paste a screenshot of the password strength and valid form here.]
+
+## Layout
+
+Recipe cards use Flexbox, and the gallery uses CSS Grid. Bootstrap columns and media queries adjust the pages for small screens.
+
+[Paste a screenshot of the website on a phone here.]
+
+## Technologies
+
+The website uses HTML, CSS, Bootstrap, JavaScript, and jQuery. The code uses basic variables, arrays, loops, functions, events, and page updates.
+
+## Files
+
+The five HTML files contain the pages, and css/style.css contains the styles. The interactive features are in js/script.js, and the Bootstrap and jQuery libraries are in vendor.
+
+## Run
+
+Open index.html in a browser to use the website. The libraries are included locally, but the food photos need an internet connection.
+
+## Contributions
+
+Add the work each member completed below. Replace the placeholders with your own details.
+
+### Zhabaikhan Ali
+
+[Write 2 or 3 simple sentences about your contribution here.]
+
+[Paste a screenshot of your work here.]
+
+### Abdul Mobin
+
+[Write 2 or 3 simple sentences about your contribution here.]
+
+[Paste a screenshot of your work here.]
+
+### Diyar Kabyken
+
+[Write 2 or 3 simple sentences about your contribution here.]
+
+[Paste a screenshot of your work here.]
+
+## Links
+
+Use the existing repository for the updated website. Paste the published website link below after it is online.
+
+Repository: [Web-dev-midterm](https://github.com/alismood/Web-dev-midterm)
+
+Published website: [Paste the published website link here.]
+
+## Sources
+
+The food photos come from Unsplash, and the about page keeps the image links from the original website. Bootstrap and jQuery are included with their original license notices.
+
+## AI Help
+
+OpenAI Codex helped write and check the code and this README. Review the code, make your own changes, and understand each feature before submitting.

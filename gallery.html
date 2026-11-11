@@ -1,4 +1,3 @@
-<!-- Gallery Page with CSS Grid and Hover Transitions -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Recipe Share - Gallery</title>
   <link rel="icon" href="images/icon.ico" type="image/x-icon">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,7 +15,7 @@
         <img src="images/icon.ico" alt="Logo" width="30" height="30" class="me-2">
         Recipe Share
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -24,7 +23,7 @@
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="recipes.html">Recipes</a></li>
-          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="gallery.html">Gallery</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
       </div>
@@ -33,44 +32,60 @@
   
 
   <main class="container mt-5 mb-5"> 
-    <h3 class="mb-3">We explain how to choose the right ingredients for Carbonara pasta, and share step-by-step recipes that you can replicate at home.</h3>
+    <h1 class="mb-3">Food Gallery</h1>
+    <p>Click a photo to see it larger. Use the arrows to browse our dishes.</p>
     <a href="recipes.html" class="text-dark text-decoration-underline mb-5 d-inline-block">Read more...</a>
  
     <div class="gallery-grid">
-      <a href="recipes.html" class="gallery-link">
+      <a href="https://images.unsplash.com/photo-1612874742237-6526221588e3?auto=format&fit=crop&w=600&q=80" class="gallery-link">
         <img src="https://images.unsplash.com/photo-1612874742237-6526221588e3?auto=format&fit=crop&w=600&q=80" alt="Spaghetti Carbonara" class="gallery-img">
       </a>
-      <a href="recipes.html" class="gallery-link">
+      <a href="https://images.unsplash.com/photo-1579684947550-22e945225d9a?auto=format&fit=crop&w=600&q=80" class="gallery-link">
         <img src="https://images.unsplash.com/photo-1579684947550-22e945225d9a?auto=format&fit=crop&w=600&q=80" alt="Bavette Pasta Carbonara" class="gallery-img">
       </a>
-      <a href="recipes.html" class="gallery-link">
+      <a href="https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=600&q=80" class="gallery-link">
         <img src="https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=600&q=80" alt="Carbonara with Bacon and Cream" class="gallery-img">
       </a>
-      <a href="recipes.html" class="gallery-link">
+      <a href="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80" class="gallery-link">
         <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80" alt="Healthy Veggie Bowl" class="gallery-img" loading="lazy">
       </a>
-      <a href="recipes.html" class="gallery-link">
+      <a href="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&q=80" class="gallery-link">
         <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&q=80" alt="Margherita Pizza" class="gallery-img" loading="lazy">
       </a>
-      <a href="recipes.html" class="gallery-link">
+      <a href="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=600&q=80" class="gallery-link">
         <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=600&q=80" alt="Smash Burger" class="gallery-img" loading="lazy">
       </a>
-      <a href="recipes.html" class="gallery-link">
+      <a href="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=600&q=80" class="gallery-link">
         <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=600&q=80" alt="Lemon Herb Grilled Chicken" class="gallery-img" loading="lazy">
       </a>
-      <a href="recipes.html" class="gallery-link">
+      <a href="https://images.unsplash.com/photo-1529042410759-befb1204b468?auto=format&fit=crop&w=600&q=80" class="gallery-link">
         <img src="https://images.unsplash.com/photo-1529042410759-befb1204b468?auto=format&fit=crop&w=600&q=80" alt="Italian Meatballs" class="gallery-img" loading="lazy">
       </a>
-      <a href="recipes.html" class="gallery-link">
+      <a href="https://images.unsplash.com/photo-1564834724105-918b73d1b9e0?auto=format&fit=crop&w=600&q=80" class="gallery-link">
         <img src="https://images.unsplash.com/photo-1564834724105-918b73d1b9e0?auto=format&fit=crop&w=600&q=80" alt="Summer Fruit Salad" class="gallery-img" loading="lazy">
       </a>
     </div>
   </main>
   
 
+
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-caption" tabindex="-1">
+    <div class="lightbox-content">
+      <button type="button" id="close-lightbox" class="btn btn-light lightbox-close">Close</button>
+      <img id="lightbox-image" src="images/icon.ico" alt="">
+      <p id="lightbox-caption" class="mt-3 mb-2"></p>
+      <div class="lightbox-controls">
+        <button type="button" id="previous-image" class="btn btn-outline-light" aria-label="Previous image">&larr; Previous</button>
+        <span id="lightbox-count" aria-live="polite"></span>
+        <button type="button" id="next-image" class="btn btn-outline-light" aria-label="Next image">Next &rarr;</button>
+      </div>
+    </div>
+  </div>
   <footer class="bg-dark text-white text-center py-3 mt-5">
     <p>&copy; 2026 Recipe Share. Follow us on social media.</p>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/bootstrap.bundle.min.js"></script>
+  <script src="vendor/jquery.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

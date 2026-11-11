@@ -1,5 +1,5 @@
 /* Base styles and Bootstrap overrides */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 
 :root {
   --primary-color: #d9534f;
@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: Arial, sans-serif;
   color: var(--text-dark);
   background-color: var(--bg-light);
   margin: 0;
@@ -63,7 +63,7 @@ main {
   object-fit: cover; 
 }
 
-/* Abdul Mobin's Work */
+/* Recipe Flexbox layout */
 
 .recipe-flex-container { 
   display: flex; 
@@ -94,7 +94,7 @@ main {
 }
 
 
-/*Diar Kabyken's work*/
+/* Gallery Grid layout */
 
 .gallery-grid {
 display: grid;
@@ -119,3 +119,127 @@ transition: transform 0.3s ease-in-out;
 }
 
 .gallery-link:hover .gallery-img { transform: scale(1.08); }
+/* Search and recipe list */
+[hidden] {
+  display: none !important;
+}
+
+.search-panel, .recipe-notebook, .registration-panel, .home-feature {
+  padding: 24px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.filter-buttons, .form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.recipe-horizontal-card h4 {
+  font-size: 1.3rem;
+}
+
+.table td:last-child {
+  min-width: 155px;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Form feedback */
+.field-feedback {
+  font-size: 0.875rem;
+  margin: 5px 0 0;
+}
+
+.password-strength {
+  padding: 8px 12px;
+  margin: 10px 0;
+  border-left: 4px solid #6c757d;
+  background: #f1f3f5;
+  font-size: 0.9rem;
+}
+
+.password-strength.weak {
+  border-color: #b02a37;
+  color: #b02a37;
+}
+
+.password-strength.medium {
+  border-color: #8a5800;
+  color: #8a5800;
+}
+
+.password-strength.strong {
+  border-color: #146c43;
+  color: #146c43;
+}
+
+/* Gallery viewer */
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1100;
+  padding: 24px;
+  overflow-y: auto;
+  background: rgba(0, 0, 0, 0.92);
+  color: #fff;
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 950px;
+  margin: 0 auto;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#lightbox-image {
+  max-width: 100%;
+  height: 65vh;
+  object-fit: contain;
+}
+
+.lightbox-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.lightbox-open {
+  overflow: hidden;
+}
+
+.gallery-link:focus-visible {
+  outline: 3px solid #b02a37;
+  outline-offset: 4px;
+}
+
+@media (max-width: 575px) {
+  .search-panel, .recipe-notebook, .registration-panel, .home-feature {
+    padding: 16px;
+  }
+
+  .lightbox {
+    padding: 16px;
+  }
+
+  .lightbox-controls {
+    gap: 10px;
+  }
+
+  #lightbox-image {
+    height: 55vh;
+  }
+}

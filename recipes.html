@@ -1,4 +1,3 @@
-<!-- Recipes Page with Flexbox Column Layout -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Recipe Share - Recipes</title>
   <link rel="icon" href="images/icon.ico" type="image/x-icon">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,14 +15,14 @@
         <img src="images/icon.ico" alt="Logo" width="30" height="30" class="me-2">
         Recipe Share
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="recipes.html">Recipes</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="recipes.html">Recipes</a></li>
           <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
@@ -33,10 +32,24 @@
   
 
   <main class="container mt-5 mb-5">
-    <h2 class="mb-4">Our Recipe Collection</h2>
+    <h1 class="mb-3">Our Recipe Collection</h1>
+    <p class="text-muted">Find a dish by name or ingredient, or choose a category.</p>
+    <div class="search-panel mb-4">
+      <label for="recipe-search" class="form-label">Search recipes</label>
+      <input type="search" id="recipe-search" class="form-control" placeholder="Try pasta, chicken, or fruit">
+      <div class="filter-buttons mt-3" role="group" aria-label="Recipe categories">
+        <button type="button" class="btn btn-danger category-filter" data-category="all" aria-pressed="true">All</button>
+        <button type="button" class="btn btn-outline-danger category-filter" data-category="pasta" aria-pressed="false">Pasta</button>
+        <button type="button" class="btn btn-outline-danger category-filter" data-category="mains" aria-pressed="false">Mains</button>
+        <button type="button" class="btn btn-outline-danger category-filter" data-category="salads" aria-pressed="false">Salads</button>
+      </div>
+      <p id="recipe-count" class="text-muted mt-3 mb-0" role="status">9 recipes found.</p>
+    </div>
+    <p id="no-recipes" class="alert alert-light" hidden>No recipes found. Try another word or category.</p>
+
     
     <div class="recipe-flex-container">
-      <div class="recipe-horizontal-card">
+      <article class="recipe-horizontal-card" data-category="pasta">
         <img src="https://images.unsplash.com/photo-1612874742237-6526221588e3?auto=format&fit=crop&w=600&q=80" alt="Spaghetti Carbonara" class="recipe-horizontal-img">
         <div class="p-4">
           <h4>Spaghetti Carbonara</h4>
@@ -47,9 +60,9 @@
             <li>Combine pasta, pork, and egg mixture off the heat.</li>
           </ul>
         </div>
-      </div>
+      </article>
 
-      <div class="recipe-horizontal-card">
+      <article class="recipe-horizontal-card" data-category="pasta">
         <img src="https://images.unsplash.com/photo-1579684947550-22e945225d9a?auto=format&fit=crop&w=600&q=80" alt="Bavette Pasta" class="recipe-horizontal-img">
         <div class="p-4">
           <h4>Bavette Pasta Carbonara</h4>
@@ -60,9 +73,9 @@
             <li>Top with black pepper.</li>
           </ul>
         </div>
-      </div>
+      </article>
 
-      <div class="recipe-horizontal-card">
+      <article class="recipe-horizontal-card" data-category="pasta">
         <img src="https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=600&q=80" alt="Bacon Cream Pasta" class="recipe-horizontal-img">
         <div class="p-4">
           <h4>Bacon and Cream Pasta</h4>
@@ -73,9 +86,9 @@
             <li>Garnish with parmesan.</li>
           </ul>
         </div>
-      </div>
+      </article>
 
-      <div class="recipe-horizontal-card">
+      <article class="recipe-horizontal-card" data-category="salads">
         <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80" alt="Healthy Bowl" class="recipe-horizontal-img">
         <div class="p-4">
           <h4>Healthy Veggie Bowl</h4>
@@ -86,9 +99,9 @@
             <li>Drizzle with tahini dressing.</li>
           </ul>
         </div>
-      </div>
+      </article>
 
-      <div class="recipe-horizontal-card">
+      <article class="recipe-horizontal-card" data-category="mains">
         <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&q=80" alt="Pizza" class="recipe-horizontal-img">
         <div class="p-4">
           <h4>Classic Margherita Pizza</h4>
@@ -99,9 +112,9 @@
             <li>Bake at max heat until crust is blistered.</li>
           </ul>
         </div>
-      </div>
+      </article>
 
-      <div class="recipe-horizontal-card">
+      <article class="recipe-horizontal-card" data-category="mains">
         <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=600&q=80" alt="Burger" class="recipe-horizontal-img">
         <div class="p-4">
           <h4>Smash Burger</h4>
@@ -112,9 +125,9 @@
             <li>Serve on a toasted brioche bun.</li>
           </ul>
         </div>
-      </div>
+      </article>
 
-      <div class="recipe-horizontal-card">
+      <article class="recipe-horizontal-card" data-category="mains">
         <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=600&q=80" alt="Grilled Chicken" class="recipe-horizontal-img">
         <div class="p-4">
           <h4>Lemon Herb Grilled Chicken</h4>
@@ -125,9 +138,9 @@
             <li>Rest for 5 minutes before slicing.</li>
           </ul>
         </div>
-      </div>
+      </article>
 
-      <div class="recipe-horizontal-card">
+      <article class="recipe-horizontal-card" data-category="mains">
         <img src="https://images.unsplash.com/photo-1529042410759-befb1204b468?auto=format&fit=crop&w=600&q=80" alt="Meatballs" class="recipe-horizontal-img">
         <div class="p-4">
           <h4>Italian Meatballs</h4>
@@ -138,9 +151,9 @@
             <li>Simmer in marinara sauce until cooked through.</li>
           </ul>
         </div>
-      </div>
+      </article>
 
-      <div class="recipe-horizontal-card">
+      <article class="recipe-horizontal-card" data-category="salads">
         <img src="https://images.unsplash.com/photo-1564834724105-918b73d1b9e0?auto=format&fit=crop&w=600&q=80" alt="Fruit Salad" class="recipe-horizontal-img">
         <div class="p-4">
           <h4>Summer Fruit Salad</h4>
@@ -151,14 +164,51 @@
             <li>Garnish with mint leaves.</li>
           </ul>
         </div>
-      </div>
+      </article>
     </div>
+
+    <section class="recipe-notebook mt-5" aria-labelledby="notebook-heading">
+      <h2 id="notebook-heading">My Recipe List</h2>
+      <p>Add recipes you want to cook. You can edit or delete them below. This list resets when you reload the page.</p>
+      <form id="recipe-form" class="row g-3 mb-4">
+        <div class="col-md-5">
+          <label for="recipe-name" class="form-label">Recipe name</label>
+          <input type="text" id="recipe-name" class="form-control" maxlength="80" required>
+        </div>
+        <div class="col-md-3">
+          <label for="recipe-category" class="form-label">Category</label>
+          <select id="recipe-category" class="form-select" required>
+            <option value="Pasta">Pasta</option>
+            <option value="Mains">Mains</option>
+            <option value="Salads">Salads</option>
+          </select>
+        </div>
+        <div class="col-md-4">
+          <label for="recipe-time" class="form-label">Cooking time in minutes</label>
+          <input type="number" id="recipe-time" class="form-control" min="1" max="1440" step="1" required>
+        </div>
+        <div class="col-12 form-actions">
+          <button type="submit" id="save-recipe" class="btn btn-danger">Add recipe</button>
+          <button type="button" id="cancel-edit" class="btn btn-outline-secondary" hidden>Cancel edit</button>
+        </div>
+      </form>
+      <p id="table-status" role="status" class="text-muted"></p>
+      <div class="table-responsive">
+        <table class="table table-striped align-middle">
+          <caption>Recipes you want to cook</caption>
+          <thead><tr><th scope="col">Recipe</th><th scope="col">Category</th><th scope="col">Minutes</th><th scope="col">Actions</th></tr></thead>
+          <tbody id="recipe-table-body"></tbody>
+        </table>
+      </div>
+    </section>
   </main>
   
 
   <footer class="bg-dark text-white text-center py-3 mt-5">
     <p>&copy; 2026 Recipe Share. Follow us on social media.</p>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/bootstrap.bundle.min.js"></script>
+  <script src="vendor/jquery.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
