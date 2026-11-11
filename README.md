@@ -12,94 +12,66 @@ Our group is IT-2503. The members are Zhabaikhan Ali, Abdul Mobin, and Diyar Kab
 
 The home page introduces the website. It has links to the recipes, gallery, and contact page.
 
-[Paste a screenshot of the home page here.]
+<img width="1470" height="836" alt="Screenshot 2026-11-11 at 18 28 27" src="https://github.com/user-attachments/assets/429ea09c-76b8-4c39-bf60-a89d8a7ac09b" />
+
 
 ## About
 
 The about page explains the website. It also shows the three team members.
+<img width="1470" height="834" alt="Screenshot 2026-11-11 at 18 28 41" src="https://github.com/user-attachments/assets/b52e678a-fd56-4df3-92a5-b04bd39d643d" />
 
-[Paste a screenshot of the about page here.]
 
 ## Recipes
 
 Users can search recipes by name or ingredient and filter them by category. The results change as they type, and the search works with uppercase and lowercase letters.
 
-[Paste a screenshot of the search and category filters here.]
+<img width="1466" height="327" alt="Screenshot 2026-11-11 at 18 29 10" src="https://github.com/user-attachments/assets/06118e46-ee7d-4b24-b381-17107024a181" />
+<img width="1470" height="646" alt="Screenshot 2026-11-11 at 18 29 24" src="https://github.com/user-attachments/assets/cca4ef0c-85f6-4bab-a750-049bcf6b02fa" />
+
 
 ## Recipe List
 
 Users can add, view, edit, and delete recipes in a table. A confirmation appears before deleting, and the list resets when the page reloads.
 
-[Paste a screenshot of the recipe table and edit form here.]
+
 
 ## Gallery
 
 The gallery uses CSS Grid to display food photos. Clicking a photo opens a larger view with previous and next buttons and fade effects.
+<img width="1470" height="830" alt="Screenshot 2026-11-11 at 18 30 18" src="https://github.com/user-attachments/assets/72bdfffd-46f1-46b3-be64-43c220e68b42" />
 
-[Paste a screenshot of the gallery grid here.]
 
-[Paste a screenshot of the larger photo view here.]
+<img width="1470" height="820" alt="Screenshot 2026-11-11 at 18 30 31" src="https://github.com/user-attachments/assets/5729fd07-10f6-4f66-978e-f14ea1ca88c6" />
+
 
 ## Contact and Registration
 
 The forms check required fields, email format, password length, and matching passwords. The password strength label changes between weak, medium, and strong as the user types. These practice forms show feedback without creating accounts or sending messages.
 
-[Paste a screenshot of the form errors here.]
+<img width="1470" height="829" alt="Screenshot 2026-11-11 at 18 31 07" src="https://github.com/user-attachments/assets/9fd97628-3ba1-498d-bd43-e6b4a76f69fe" />
 
-[Paste a screenshot of the password strength and valid form here.]
+
+<img width="762" height="371" alt="Screenshot 2026-11-11 at 18 31 29" src="https://github.com/user-attachments/assets/c6792e4b-69a7-4993-960b-efddb0c80390" />
+
 
 ## Layout
 
 Recipe cards use Flexbox, and the gallery uses CSS Grid. Bootstrap columns and media queries adjust the pages for small screens.
 
-[Paste a screenshot of the website on a phone here.]
-
 ## Technologies
 
 The website uses HTML, CSS, Bootstrap, JavaScript, and jQuery. The code uses basic variables, arrays, loops, functions, events, and page updates.
 
-## Files
-
-The five HTML files contain the pages, and css/style.css contains the styles. The interactive features are in js/script.js, and the Bootstrap and jQuery libraries are in vendor.
-
-## Run
-
-Open index.html in a browser to use the website. The libraries are included locally, but the food photos need an internet connection.
-
-## Contributions
-
-Add the work each member completed below. Replace the placeholders with your own details.
-
 ### Zhabaikhan Ali
 
-[Write 2 or 3 simple sentences about your contribution here.]
 
-[Paste a screenshot of your work here.]
+Did the Home page and about page
 
 ### Abdul Mobin
 
-[Write 2 or 3 simple sentences about your contribution here.]
-
-[Paste a screenshot of your work here.]
+Did recipe and gallery page
 
 ### Diyar Kabyken
 
-[Write 2 or 3 simple sentences about your contribution here.]
+Did the contact page
 
-[Paste a screenshot of your work here.]
-
-## Links
-
-Use the existing repository for the updated website. Paste the published website link below after it is online.
-
-Repository: [Web-dev-midterm](https://github.com/alismood/Web-dev-midterm)
-
-Published website: [Paste the published website link here.]
-
-## Sources
-
-The food photos come from Unsplash, and the about page keeps the image links from the original website. Bootstrap and jQuery are included with their original license notices.
-
-## AI Help
-
-OpenAI Codex helped write and check the code and this README. Review the code, make your own changes, and understand each feature before submitting.
